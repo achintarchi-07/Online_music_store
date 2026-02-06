@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+}
+
+header {
+   background: #f7a1c4;
+   color: #222;  
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header input {
+    padding: 8px;
+    width: 250px;
+}
+
+.cart-link {
+    color: white;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.music-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.music-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.music-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.music-card button {
+    margin: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.dark header {
+    background: #ff5c8a;
+}
+
+.dark .music-card {
+    background: #1e1e1e;
+}
+
+.music-card {
+    transition: transform 0.3s;
+}
+
+.music-card:hover {
+    transform: scale(1.05);
+}
+
+.now-playing {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    background: #1e1e1e;
+    color: white;
+    border-bottom: 1px solid #333;
+}
+
+.now-playing img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.now-playing h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.now-playing p {
+    margin: 4px 0 0;
+    color: #ccc;
+    font-size: 14px;
+}
